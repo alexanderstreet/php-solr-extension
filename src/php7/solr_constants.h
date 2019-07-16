@@ -39,6 +39,7 @@
 #define SOLR_PHP_NATIVE_RESPONSE_WRITER        "phpnative"
 #define SOLR_XML_RESPONSE_WRITER               "xml"
 #define SOLR_JSON_RESPONSE_WRITER              "json"
+#define SOLR_XSLT_RESPONSE_WRITER              "xslt"
 
 #define SOLR_REQUEST_DEFAULT_HOST "localhost"
 #define SOLR_REQUEST_DEFAULT_PATH "solr"

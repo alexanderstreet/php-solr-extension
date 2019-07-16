@@ -255,7 +255,7 @@ PHP_SOLR_API void solr_response_get_response_impl(
                     solr_sarray_to_sobject(&buffer TSRMLS_CC);
                 }
 
-            } else if (0 == strcmp(Z_STRVAL_P(response_writer), SOLR_JSON_RESPONSE_WRITER)) {
+            } else if (0 == strcmp(Z_STRVAL_P(response_writer), SOLR_JSON_RESPONSE_WRITER) || 0 == strcmp(Z_STRVAL_P(response_writer), SOLR_XSLT_RESPONSE_WRITER)) {
 
                 int json_translation_result = solr_json_to_php_native(&buffer, Z_STRVAL_P(raw_response), Z_STRLEN_P(raw_response) TSRMLS_CC);
 

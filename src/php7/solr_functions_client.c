@@ -866,7 +866,7 @@ PHP_SOLR_API void solr_throw_solr_server_exception(solr_client_t *client,const c
         }
     }
 
-    if( 0 == strcmp(response_writer, SOLR_JSON_RESPONSE_WRITER))
+    if( 0 == strcmp(response_writer, SOLR_JSON_RESPONSE_WRITER) || 0 == strcmp(response_writer, SOLR_XSLT_RESPONSE_WRITER))
     {
         if(solr_get_json_error(client->handle.response_body.buffer, exceptionData TSRMLS_CC) != SUCCESS)
         {

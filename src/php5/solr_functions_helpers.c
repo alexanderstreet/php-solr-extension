@@ -1327,6 +1327,11 @@ PHP_SOLR_API int solr_is_supported_response_writer(const solr_char_t * response_
 		return 1;
 	}
 
+    if (0 == strcmp(response_writer, SOLR_XSLT_RESPONSE_WRITER))
+    {
+        return 1;
+    }
+
 	return 0;
 }
 /* }}} */
