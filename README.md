@@ -20,7 +20,7 @@ This library requires curl and libxml2 development packages and php extensions
 For Debian/Ubuntu/Mint
 
 ```bash
-    sudo apt-get install php5-curl libcurl4-gnutls-dev libxml2 libxml2-dev
+    sudo apt-get install php7.1-curl libcurl4-gnutls-dev libxml2 libxml2-dev
 ```
 For RHEL/Fedora/CentOS/Scientific linux
 ```bash
